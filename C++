@@ -1,0 +1,33 @@
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+/*
+  FOR TO
+  AUTOR: JUAN CAMILO GALVIS
+  FECHA 2/09/2022
+*/
+//definicion de variables
+int64_t num;
+ 
+int main() {
+printf("\nDIGITE LA CANTIDAD DE NÚMEROS DE TRIGONACCI QUE DESEA CONOCER ");
+ scanf("%ld",&num);
+
+  int64_t t1=1, t2=1, t3=2, t;
+  printf("\n%ld %ld %ld", t1, t2, t3);
+  printf(" ");
+
+  for(int i=2; i<num; i++){
+    t = t1+t2+t3;
+    printf("%ld", t); printf(" ");
+    t1 = t2;
+    t2 = t3;
+    t3 = t;
+    
+  }
+
+
+
+
+  
+}
